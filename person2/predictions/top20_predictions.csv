@@ -1,0 +1,81 @@
+rank,source_subreddit,target_subreddit,algorithm,score,ground_truth
+1,bestof,subredditdrama,Common Neighbors,1106.0,1
+2,bestof,askreddit,Common Neighbors,840.0,1
+3,funny,videos,Common Neighbors,631.0,1
+4,subredditdrama,videos,Common Neighbors,617.0,1
+5,bestof,switcharoo,Common Neighbors,504.0,1
+6,askreddit,worldnews,Common Neighbors,474.0,1
+7,askreddit,wtf,Common Neighbors,472.0,1
+8,bestof,gaming,Common Neighbors,460.0,1
+9,todayilearned,worldnews,Common Neighbors,458.0,1
+10,iama,news,Common Neighbors,451.0,1
+11,funny,gifs,Common Neighbors,435.0,1
+12,pics,wtf,Common Neighbors,425.0,1
+13,iama,gaming,Common Neighbors,417.0,1
+14,bestof,hailcorporate,Common Neighbors,414.0,1
+15,pics,gaming,Common Neighbors,411.0,1
+16,subredditdrama,the_donald,Common Neighbors,409.0,1
+17,subredditdrama,shitamericanssay,Common Neighbors,400.0,1
+18,subredditdrama,hailcorporate,Common Neighbors,397.0,1
+19,askreddit,drama,Common Neighbors,390.0,1
+20,askreddit,science,Common Neighbors,390.0,1
+1,gaminghardware,headsets,Jaccard,1.0,1
+2,politique,askfrance,Jaccard,1.0,1
+3,soccerpredictions,libertadores,Jaccard,1.0,1
+4,seireitei,lasnoches,Jaccard,1.0,1
+5,columbusit,columbussocial,Jaccard,1.0,1
+6,coastlife,nintendude,Jaccard,1.0,1
+7,maxcoin,maxcoinmining,Jaccard,1.0,1
+8,il2,battleofstalingrad,Jaccard,1.0,1
+9,ntmods,ntcirclejerk,Jaccard,1.0,1
+10,terrafirmacraft,technode,Jaccard,1.0,1
+11,chicagomotorcycles,motorcyclewisconsin,Jaccard,1.0,1
+12,hawktalk,richmondfc,Jaccard,1.0,1
+13,conjecturevlog,thinkfact,Jaccard,1.0,1
+14,khx,khux,Jaccard,1.0,1
+15,churchofchie,persona4golden,Jaccard,1.0,1
+16,csgoscammers,esea,Jaccard,1.0,1
+17,citiesskylinesmodding,skylinesoverwatch,Jaccard,1.0,1
+18,ccjcjcjcjcjcjcjcjcjcj,aidcirclejerk,Jaccard,1.0,1
+19,testreddit1919,thorgf,Jaccard,1.0,1
+20,grad,soylentbuffalo,Jaccard,1.0,0
+1,bestof,subredditdrama,Adamic-Adar,298.2347192331845,1
+2,bestof,askreddit,Adamic-Adar,227.26281504172104,1
+3,funny,videos,Adamic-Adar,173.7829943222975,1
+4,subredditdrama,videos,Adamic-Adar,154.10661779842067,1
+5,askreddit,wtf,Adamic-Adar,134.97072936292545,1
+6,askreddit,worldnews,Adamic-Adar,128.4009439108676,1
+7,funny,gifs,Adamic-Adar,124.19626573304483,1
+8,todayilearned,worldnews,Adamic-Adar,120.83711079976237,1
+9,bestof,switcharoo,Adamic-Adar,120.49727647465133,1
+10,iama,news,Adamic-Adar,118.52765980521747,1
+11,pics,wtf,Adamic-Adar,118.34406167541702,1
+12,bestof,gaming,Adamic-Adar,114.59620378742328,1
+13,pics,gaming,Adamic-Adar,109.65149544717923,1
+14,iama,gaming,Adamic-Adar,109.39293566186561,1
+15,askreddit,science,Adamic-Adar,106.0544171733037,1
+16,todayilearned,gifs,Adamic-Adar,97.96125538171023,1
+17,subredditdrama,the_donald,Adamic-Adar,97.32249942803048,1
+18,bestof,hailcorporate,Adamic-Adar,95.60586732742821,1
+19,funny,worldnews,Adamic-Adar,93.2754829150783,1
+20,funny,adviceanimals,Adamic-Adar,92.90759340507313,1
+1,bestof,askreddit,Preferential Attachment,8787262.0,1
+2,bestof,subredditdrama,Preferential Attachment,6479308.0,1
+3,subredditdrama,videos,Preferential Attachment,4334954.0,1
+4,iama,gaming,Preferential Attachment,4317560.0,1
+5,funny,videos,Preferential Attachment,3984097.0,1
+6,askreddit,worldnews,Preferential Attachment,3891879.0,1
+7,bestof,gaming,Preferential Attachment,3843928.0,1
+8,askreddit,wtf,Preferential Attachment,3561779.0,1
+9,askreddit,drama,Preferential Attachment,3466050.0,1
+10,iama,news,Preferential Attachment,3345810.0,1
+11,iama,wtf,Preferential Attachment,3226210.0,1
+12,pics,gaming,Preferential Attachment,3223008.0,1
+13,conspiracy,askreddit,Preferential Attachment,3106241.0,1
+14,askreddit,science,Preferential Attachment,3079833.0,1
+15,funny,worldnews,Preferential Attachment,2637423.0,1
+16,subredditdrama,the_donald,Preferential Attachment,2536228.0,1
+17,switcharoo,askreddit,Preferential Attachment,2488954.0,1
+18,pics,wtf,Preferential Attachment,2408328.0,1
+19,funny,gifs,Preferential Attachment,2360035.0,1
+20,todayilearned,worldnews,Preferential Attachment,2158749.0,1

@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+test_pipeline.py
+
+# System
+.DS_Store
+.vscode/
+
+# Data
+data/
+data/raw/*
+data/processed/*
+
+# Results
+results/figures/*
+!results/figures/.gitkeep
+results/tables/*
+!results/tables/.gitkeep
+results/predictions/*
+!results/predictions/.gitkeep
+results/cytoscape/*
+!results/cytoscape/.gitkeep
+
+# Environments
+*.venv
+venv/
+env/
