@@ -1,0 +1,9 @@
+algorithm,k,total_candidates,cross_community_count,within_community_count,cross_community_proportion
+Common Neighbors,10,10,10,0,1.0
+Common Neighbors,20,20,17,3,0.85
+Jaccard,10,10,0,10,0.0
+Jaccard,20,20,0,20,0.0
+Adamic-Adar,10,10,9,1,0.9
+Adamic-Adar,20,20,17,3,0.85
+Preferential Attachment,10,10,10,0,1.0
+Preferential Attachment,20,20,18,2,0.9
