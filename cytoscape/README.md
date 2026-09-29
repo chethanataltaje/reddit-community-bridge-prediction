@@ -27,7 +27,7 @@ To ensure Cytoscape layouts remain clean, interactive, and readable:
 ### Step 1: Import Existing Network (`edges.csv`)
 1. Open Cytoscape.
 2. Go to **File $\rightarrow$ Import $\rightarrow$ Network from File...**
-3. Select `person2/cytoscape/edges.csv`.
+3. Select `cytoscape/edges.csv`.
 4. In the import dialog, map:
    * `source` $\rightarrow$ **Source Node**
    * `target` $\rightarrow$ **Target Node**
@@ -36,14 +36,14 @@ To ensure Cytoscape layouts remain clean, interactive, and readable:
 
 ### Step 2: Import Node Metadata (`nodes.csv`)
 1. Go to **File $\rightarrow$ Import $\rightarrow$ Table from File...**
-2. Select `person2/cytoscape/nodes.csv`.
+2. Select `cytoscape/nodes.csv`.
 3. Set **Where to Import Table Data** to **To Selected Networks Only**.
 4. Map `id` to **Key** (matching the node name/ID in Cytoscape).
 5. Click **OK**. Node attributes `degree` and `community_id` are now loaded into the Node Table.
 
 ### Step 3: Overlay Predicted Edges (`predicted_edges.csv`)
 1. Go to **File $\rightarrow$ Import $\rightarrow$ Network from File...**
-2. Select `person2/cytoscape/predicted_edges.csv`.
+2. Select `cytoscape/predicted_edges.csv`.
 3. In the import dialog:
    * Select **To Existing Network** (or import as an overlay edge table).
    * Map `source` $\rightarrow$ **Source Node**

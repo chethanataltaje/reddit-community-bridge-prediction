@@ -5,28 +5,25 @@ import sys
 import os
 
 # Ensure project root is in sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
 
-from person2.community.community_detection import (
+from src.community_detection import (
     detect_communities,
     generate_community_mapping_dataframe,
     get_community_statistics,
     generate_community_summary_dataframe
 )
 
-from person2.community.bridge_analysis import (
+from src.bridge_analysis import (
     annotate_community_bridges,
     generate_bridge_summary
 )
 
 
-class TestPerson2Community(unittest.TestCase):
+class TestCommunity(unittest.TestCase):
 
     def setUp(self):
         # Create a small synthetic graph with 2 clear cliques (communities)
-        # Clique 1: A, B, C
-        # Clique 2: X, Y, Z
-        # Inter-clique edge: C - X
         self.G = nx.Graph()
         self.G.add_edges_from([
             ("A", "B"), ("B", "C"), ("A", "C"),
@@ -58,13 +55,11 @@ class TestPerson2Community(unittest.TestCase):
 
         df_ann = annotate_community_bridges(df_preds, comm_map)
 
-        # A-B is same community (0 == 0) -> cross_community = False
         row_same = df_ann[df_ann["source_subreddit"] == "A"][df_ann["target_subreddit"] == "B"].iloc[0]
         self.assertFalse(row_same["cross_community"])
         self.assertEqual(row_same["source_community"], 0)
         self.assertEqual(row_same["target_community"], 0)
 
-        # A-X is cross community (0 != 1) -> cross_community = True
         row_cross = df_ann[df_ann["source_subreddit"] == "A"][df_ann["target_subreddit"] == "X"].iloc[0]
         self.assertTrue(row_cross["cross_community"])
         self.assertEqual(row_cross["source_community"], 0)
@@ -73,7 +68,6 @@ class TestPerson2Community(unittest.TestCase):
     def test_missing_community_node_handled_safely(self):
         comm_map = {"A": 0, "B": 0}
 
-        # Node 'UNKNOWN' is missing from community_map
         df_preds = pd.DataFrame([
             {"algorithm": "JC", "rank": 1, "source_subreddit": "A", "target_subreddit": "UNKNOWN", "score": 0.5, "ground_truth": 0}
         ])
@@ -88,8 +82,6 @@ class TestPerson2Community(unittest.TestCase):
     def test_bridge_counts_and_cross_community_proportion(self):
         comm_map = {"A": 0, "B": 0, "C": 0, "X": 1, "Y": 1, "Z": 1}
 
-        # 4 predictions for algorithm "TestAlgo":
-        # 1 within (A-B), 3 cross (A-X, B-Y, C-Z)
         df_preds = pd.DataFrame([
             {"algorithm": "TestAlgo", "k": 4, "rank": 1, "source_subreddit": "A", "target_subreddit": "B", "score": 4.0},
             {"algorithm": "TestAlgo", "k": 4, "rank": 2, "source_subreddit": "A", "target_subreddit": "X", "score": 3.0},

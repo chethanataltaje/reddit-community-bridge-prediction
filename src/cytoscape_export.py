@@ -1,5 +1,5 @@
 """
-Person 2 Cytoscape Export Module
+Cytoscape Export Module
 
 Exports NetworkX G_train subgraph and top predicted link candidates for visualization in Cytoscape.
 
@@ -41,7 +41,6 @@ def select_cytoscape_subgraph_nodes(G_train: nx.Graph, df_predictions: pd.DataFr
     for node in target_nodes:
         if G_train.has_node(node):
             neighbors = list(G_train.neighbors(node))
-            # Include 1-hop neighbors if degree is within readable limits
             for nbr in neighbors:
                 if G_train.degree(nbr) <= max_neighbor_degree or nbr in target_nodes:
                     subgraph_nodes.add(str(nbr))
@@ -94,7 +93,6 @@ def export_cytoscape_existing_edges(G_train: nx.Graph, selected_nodes: set) -> p
     Returns:
         pd.DataFrame: DataFrame with columns ['source', 'target', 'edge_type'].
     """
-    # Subgraph induced by selected nodes
     subgraph = G_train.subgraph([n for n in selected_nodes if G_train.has_node(n)])
 
     records = []

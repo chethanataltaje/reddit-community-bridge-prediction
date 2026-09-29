@@ -7,16 +7,16 @@ import numpy as np
 import sys
 
 # Ensure project root is in sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
 
-from person2.cytoscape.cytoscape_export import (
+from src.cytoscape_export import (
     select_cytoscape_subgraph_nodes,
     export_cytoscape_nodes,
     export_cytoscape_existing_edges,
     export_cytoscape_predicted_edges
 )
 
-from person2.visualizations.generate_plots import (
+from src.visualization import (
     plot_algorithm_precision_roc_comparison,
     plot_algorithm_recall_comparison,
     plot_cross_community_bridge_proportion,
@@ -24,10 +24,10 @@ from person2.visualizations.generate_plots import (
     plot_roc_curves
 )
 
-from person2.evaluation.evaluation import extract_labels_and_scores, compute_roc_auc
+from src.evaluation import extract_labels_and_scores, compute_roc_auc
 
 
-class TestPerson2CytoscapeVisualizations(unittest.TestCase):
+class TestVisualizations(unittest.TestCase):
 
     def setUp(self):
         self.G = nx.Graph()
@@ -100,7 +100,6 @@ class TestPerson2CytoscapeVisualizations(unittest.TestCase):
             self.assertTrue(os.path.exists(p4) and os.path.getsize(p4) > 0)
 
     def test_roc_auc_consistency_with_evaluation(self):
-        # Verify that compute_roc_auc matches expected exact values
         scores_list = [("A", "B", 5.0), ("X", "Y", 1.0), ("C", "D", 4.0), ("W", "Z", 2.0)]
         test_pos = [("A", "B"), ("C", "D")]
         

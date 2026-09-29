@@ -4,16 +4,16 @@ import sys
 import os
 
 # Ensure project root is in sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
 
-from person2.predictions.predictions import (
+from src.predictions import (
     extract_top_k_predictions,
     generate_top_k_dataframe,
     summarize_top_k_precision
 )
 
 
-class TestPerson2Predictions(unittest.TestCase):
+class TestPredictions(unittest.TestCase):
 
     def test_descending_score_ordering_and_ranks(self):
         scores = [
@@ -45,7 +45,6 @@ class TestPerson2Predictions(unittest.TestCase):
         ]
         results = extract_top_k_predictions(scores, "Jaccard", k=10)
 
-        # Should deduplicate (subB, subA) and return only 2 unique pairs
         self.assertEqual(len(results), 2)
         self.assertEqual(results[0]["source_subreddit"], "subA")
         self.assertEqual(results[0]["target_subreddit"], "subB")
@@ -53,7 +52,6 @@ class TestPerson2Predictions(unittest.TestCase):
         self.assertEqual(results[1]["target_subreddit"], "subY")
 
     def test_stable_ranking(self):
-        # Tied scores should preserve original order stably
         scores = [
             ("subA", "subB", 5.0),
             ("subC", "subD", 5.0),

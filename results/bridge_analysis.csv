@@ -25,10 +25,10 @@ Adamic-Adar,10,3,funny,videos,173.7829943222975,3,1321,True,1
 Adamic-Adar,10,4,subredditdrama,videos,154.10661779842067,1263,1321,True,1
 Adamic-Adar,10,5,askreddit,wtf,134.97072936292545,49,3,True,1
 Adamic-Adar,10,6,askreddit,worldnews,128.4009439108676,49,1263,True,1
-Adamic-Adar,10,7,funny,gifs,124.19626573304484,3,3,False,1
-Adamic-Adar,10,8,todayilearned,worldnews,120.83711079976236,3,1263,True,1
-Adamic-Adar,10,9,bestof,switcharoo,120.49727647465131,40,3,True,1
-Adamic-Adar,10,10,iama,news,118.52765980521748,2380,1263,True,1
+Adamic-Adar,10,7,funny,gifs,124.19626573304483,3,3,False,1
+Adamic-Adar,10,8,todayilearned,worldnews,120.83711079976237,3,1263,True,1
+Adamic-Adar,10,9,bestof,switcharoo,120.49727647465133,40,3,True,1
+Adamic-Adar,10,10,iama,news,118.52765980521747,2380,1263,True,1
 Preferential Attachment,10,1,bestof,askreddit,8787262.0,40,49,True,1
 Preferential Attachment,10,2,bestof,subredditdrama,6479308.0,40,1263,True,1
 Preferential Attachment,10,3,subredditdrama,videos,4334954.0,1263,1321,True,1
@@ -78,27 +78,27 @@ Jaccard,20,16,csgoscammers,esea,1.0,132,132,False,1
 Jaccard,20,17,citiesskylinesmodding,skylinesoverwatch,1.0,132,132,False,1
 Jaccard,20,18,ccjcjcjcjcjcjcjcjcjcj,aidcirclejerk,1.0,3,3,False,1
 Jaccard,20,19,testreddit1919,thorgf,1.0,132,132,False,1
-Jaccard,20,20,grad,soylentbuffalo,1.0,1263,1263,False,0
+Jaccard,20,20,tlozbotw,windwakerselfies,1.0,132,132,False,0
 Adamic-Adar,20,1,bestof,subredditdrama,298.2347192331845,40,1263,True,1
 Adamic-Adar,20,2,bestof,askreddit,227.26281504172104,40,49,True,1
 Adamic-Adar,20,3,funny,videos,173.7829943222975,3,1321,True,1
 Adamic-Adar,20,4,subredditdrama,videos,154.10661779842067,1263,1321,True,1
 Adamic-Adar,20,5,askreddit,wtf,134.97072936292545,49,3,True,1
 Adamic-Adar,20,6,askreddit,worldnews,128.4009439108676,49,1263,True,1
-Adamic-Adar,20,7,funny,gifs,124.19626573304484,3,3,False,1
-Adamic-Adar,20,8,todayilearned,worldnews,120.83711079976236,3,1263,True,1
-Adamic-Adar,20,9,bestof,switcharoo,120.49727647465131,40,3,True,1
-Adamic-Adar,20,10,iama,news,118.52765980521748,2380,1263,True,1
+Adamic-Adar,20,7,funny,gifs,124.19626573304483,3,3,False,1
+Adamic-Adar,20,8,todayilearned,worldnews,120.83711079976237,3,1263,True,1
+Adamic-Adar,20,9,bestof,switcharoo,120.49727647465133,40,3,True,1
+Adamic-Adar,20,10,iama,news,118.52765980521747,2380,1263,True,1
 Adamic-Adar,20,11,pics,wtf,118.34406167541702,40,3,True,1
 Adamic-Adar,20,12,bestof,gaming,114.59620378742328,40,132,True,1
-Adamic-Adar,20,13,pics,gaming,109.65149544717924,40,132,True,1
-Adamic-Adar,20,14,iama,gaming,109.3929356618656,2380,132,True,1
+Adamic-Adar,20,13,pics,gaming,109.65149544717923,40,132,True,1
+Adamic-Adar,20,14,iama,gaming,109.39293566186561,2380,132,True,1
 Adamic-Adar,20,15,askreddit,science,106.0544171733037,49,1263,True,1
-Adamic-Adar,20,16,todayilearned,gifs,97.96125538171025,3,3,False,1
+Adamic-Adar,20,16,todayilearned,gifs,97.96125538171023,3,3,False,1
 Adamic-Adar,20,17,subredditdrama,the_donald,97.32249942803048,1263,1263,False,1
-Adamic-Adar,20,18,bestof,hailcorporate,95.6058673274282,40,3,True,1
+Adamic-Adar,20,18,bestof,hailcorporate,95.60586732742821,40,3,True,1
 Adamic-Adar,20,19,funny,worldnews,93.2754829150783,3,1263,True,1
-Adamic-Adar,20,20,funny,adviceanimals,92.90759340507311,3,1263,True,1
+Adamic-Adar,20,20,funny,adviceanimals,92.90759340507313,3,1263,True,1
 Preferential Attachment,20,1,bestof,askreddit,8787262.0,40,49,True,1
 Preferential Attachment,20,2,bestof,subredditdrama,6479308.0,40,1263,True,1
 Preferential Attachment,20,3,subredditdrama,videos,4334954.0,1263,1321,True,1

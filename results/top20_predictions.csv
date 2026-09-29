@@ -38,7 +38,7 @@ rank,source_subreddit,target_subreddit,algorithm,score,ground_truth
 17,citiesskylinesmodding,skylinesoverwatch,Jaccard,1.0,1
 18,ccjcjcjcjcjcjcjcjcjcj,aidcirclejerk,Jaccard,1.0,1
 19,testreddit1919,thorgf,Jaccard,1.0,1
-20,grad,soylentbuffalo,Jaccard,1.0,0
+20,tlozbotw,windwakerselfies,Jaccard,1.0,0
 1,bestof,subredditdrama,Adamic-Adar,298.2347192331845,1
 2,bestof,askreddit,Adamic-Adar,227.26281504172104,1
 3,funny,videos,Adamic-Adar,173.7829943222975,1

@@ -1,12 +1,12 @@
 """
-Person 2 Result Visualizations Module
+Visualization Module for Link Prediction and Community Bridge Analysis
 
 Generates publication-quality charts using Matplotlib:
 1. algorithm_precision_roc_comparison.png: Comparison of Precision@10, Precision@20, and ROC-AUC.
 2. algorithm_recall_comparison.png: Comparison of Recall@10 and Recall@20 (ranking recall).
 3. cross_community_bridge_proportion.png: Comparison of Top-10 and Top-20 cross-community proportions with explicit bar value labels.
 4. community_size_distribution.png: Linear histogram and log-log rank distribution of detected Louvain community sizes.
-5. roc_curves.png: Exact ROC curves for all four baseline link prediction heuristics matching evaluation_results.csv.
+5. roc_curves.png: Exact ROC curves for all four baseline link prediction heuristics matching evaluation results.
 """
 
 import os
@@ -17,7 +17,7 @@ matplotlib.use('Agg')  # Headless backend
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_curve, auc
 
-from person2.evaluation.evaluation import extract_labels_and_scores, compute_roc_auc
+from evaluation import extract_labels_and_scores, compute_roc_auc
 
 
 def plot_algorithm_precision_roc_comparison(df_eval: pd.DataFrame, output_path: str):

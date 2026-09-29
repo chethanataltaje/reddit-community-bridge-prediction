@@ -1,5 +1,5 @@
 """
-Person 2 Community Bridge Analysis Module
+Community Bridge Analysis Module
 
 Analyzes predicted link candidates to identify potential emerging community bridges (cross-community candidates).
 
@@ -93,7 +93,6 @@ def generate_bridge_summary(df_annotated: pd.DataFrame) -> pd.DataFrame:
     for algo in algorithms:
         sub_algo = df_annotated[df_annotated["algorithm"] == algo]
 
-        # If 'k' column exists, group by k; otherwise use length
         k_values = sub_algo["k"].unique() if "k" in sub_algo.columns else [len(sub_algo)]
 
         for k_val in sorted(k_values):

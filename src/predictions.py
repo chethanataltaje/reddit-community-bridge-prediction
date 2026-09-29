@@ -1,8 +1,8 @@
 """
-Person 2 Top-K Predictions Module
+Predictions Module for Link Candidate Extraction
 
 Terminological & Methodological Note:
-- These Top-10 and Top-20 outputs represent high-scoring predicted candidate links (potential emerging connections)
+- Top-10 and Top-20 outputs represent high-scoring predicted candidate links (potential emerging connections)
   extracted from the held-out test candidate set.
 - They are candidate topological link predictions and are NOT guaranteed future Reddit hyperlinks.
 - Ground-truth annotations ('ground_truth' column: 1 for held-out positive test edge, 0 for negative test candidate)
