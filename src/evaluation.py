@@ -1,5 +1,5 @@
 """
-Person 2 Evaluation Module
+Evaluation Module for Link Prediction Heuristics
 
 Methodology Note:
 - Precision@K and Recall@K are ranking-based metrics that evaluate the quality of top-ranked link predictions.

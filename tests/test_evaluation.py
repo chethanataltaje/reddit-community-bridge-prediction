@@ -5,9 +5,9 @@ import sys
 import os
 
 # Ensure project root is in sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
 
-from person2.evaluation.evaluation import (
+from src.evaluation import (
     extract_labels_and_scores,
     compute_roc_auc,
     compute_classification_metrics,
@@ -17,7 +17,7 @@ from person2.evaluation.evaluation import (
 )
 
 
-class TestPerson2Evaluation(unittest.TestCase):
+class TestEvaluation(unittest.TestCase):
 
     def test_label_alignment(self):
         # Synthetic positive edges

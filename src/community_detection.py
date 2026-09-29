@@ -1,5 +1,5 @@
 """
-Person 2 Community Detection Module
+Community Detection Module for Training Graph
 
 Executes Louvain community detection on G_train strictly to partition nodes into discrete modular communities.
 Does NOT use held-out test edges or negative test candidates during community partitioning.
